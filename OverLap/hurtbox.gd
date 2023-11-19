@@ -41,8 +41,6 @@ func _on_timer_timeout():
 
 func _on_invincibility_started():
 	set_deferred("monitoring", false)
-	print("Started")
 
 func _on_invincibility_ended():
 	set_deferred("monitoring", true)
-	print("Ended")
