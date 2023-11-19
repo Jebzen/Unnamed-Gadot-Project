@@ -22,6 +22,7 @@ var stats = PlayerStats
 @onready var hurtBox = $Hurtbox
 
 func _ready():
+	randomize()
 	#animation_finished.connect(_on_animation_finished)
 	stats.connect("no_health", queue_free)
 	animationTree.active = true
